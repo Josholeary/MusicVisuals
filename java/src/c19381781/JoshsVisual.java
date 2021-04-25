@@ -6,8 +6,12 @@ public class JoshsVisual extends Visual
 { 
     boolean sphere = false;
     boolean plan = false;
+    boolean spin = false;
+    boolean bounce = false;
     ColourSpheres sp;
     Planets pl;
+    Spinner sn;
+    BounceTube bt;
 
     public void settings()
     {
@@ -30,6 +34,8 @@ public class JoshsVisual extends Visual
 
         sp = new ColourSpheres(this);
         pl = new Planets(this);
+        sn = new Spinner(this);
+        bt = new BounceTube(this);
     }
 
     public void keyPressed()
@@ -43,11 +49,29 @@ public class JoshsVisual extends Visual
         {
             plan = ! plan;
             sphere = false;
+            spin = false;
+            bounce = false;
         }
         if (key == '2')
         {
             sphere = ! sphere;
             plan = false;
+            spin = false;
+            bounce = false;
+        }
+        if(key == '3')
+        {
+            spin = ! spin;
+            plan = false;
+            sphere = false;
+            bounce = false;
+        }
+        if(key == '4')
+        {
+            bounce = ! bounce;
+            plan = false;
+            sphere = false;
+            spin = false;
         }
     }
 
@@ -72,6 +96,7 @@ public class JoshsVisual extends Visual
         // Call this is you want to get the average amplitude
         calculateAverageAmplitude();   
         surface.setResizable(true);  
+        //call individual visual render functions from boolean above
         if(sphere)
         {
         sp.render();
@@ -80,5 +105,13 @@ public class JoshsVisual extends Visual
         {
             pl.render();
         }        
+        if(spin)
+        {
+            sn.render();
+        }
+        if(bounce)
+        {
+            bt.render();
+        }
     }
 }

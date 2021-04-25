@@ -2,11 +2,10 @@ package c19381781;
 
     import processing.core.*;
 
-// This is an example of a visual that uses the audio bands
+
 public class Planets
 {
     JoshsVisual jv;
-    float cy=0;
 
     public Planets(JoshsVisual jv)
     {
@@ -19,12 +18,12 @@ public class Planets
     {
         //planets orbit speed and growth is according to smoothed amplitude of song
         //sun, center piece
-        jv.translate(700, 400, -400);
-        jv.rotateY(angle);
-        jv.fill( 15+jv.getSmoothedAmplitude()*35, 255, 255);
+        jv.translate(700, 400, -400);  //sun is located central
+        jv.rotateY(angle);  //all shapes only rotate using y
+        jv.fill( 15+jv.getSmoothedAmplitude()*35, 255, 255);    //sun is a yellow/orange colour and changes depending on smooth amplitude
         jv.lights();
-        jv.stroke(28, 255, 255);
-        jv.sphere(250+jv.getSmoothedAmplitude()*200);
+        jv.stroke(28, 255, 255);    //added stroke to some of the planets as a detail feature for aesthetics
+        jv.sphere(250+jv.getSmoothedAmplitude()*200);   //size of each planet will grow depending on smoothed amplitude but sun will grow most as it is a gaseous star
 
         //mercury, rotates around the sun
         jv.translate(300, 0, -300);
@@ -66,7 +65,7 @@ public class Planets
         jv.stroke(32, 110, 110); //added stroke to jupiter to give appearance of it's cloudy surface
         jv.sphere(200+jv.getSmoothedAmplitude()*150);
 
-        angle += jv.getSmoothedAmplitude()/25;
+        angle += jv.getSmoothedAmplitude()/25; //planets orbits at smoothedamplitude divided by 25 to give a noticeable but not too fast orbital patern
 
     }
 }
