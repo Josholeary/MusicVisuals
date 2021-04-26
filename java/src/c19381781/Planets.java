@@ -1,6 +1,5 @@
 package c19381781;
 
-
 public class Planets
 {
     JoshsVisual jv;

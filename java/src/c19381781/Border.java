@@ -1,8 +1,5 @@
 package c19381781;
 
-import processing.core.*;
-import ie.tudublin.*;
-
 public class Border
 {
     JoshsVisual jv;

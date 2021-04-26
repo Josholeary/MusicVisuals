@@ -1,8 +1,5 @@
 package c19381781;
 
-    import processing.core.*;
-
-
 public class ColourSpheres 
 {
     JoshsVisual jv;
