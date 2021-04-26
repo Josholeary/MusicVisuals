@@ -12,6 +12,7 @@ public class JoshsVisual extends Visual
     Planets pl;
     Spinner sn;
     BounceTube bt;
+    Border bd;
 
     public void settings()
     {
@@ -36,6 +37,7 @@ public class JoshsVisual extends Visual
         pl = new Planets(this);
         sn = new Spinner(this);
         bt = new BounceTube(this);
+        bd = new Border(this);
     }
 
     public void keyPressed()
@@ -97,6 +99,7 @@ public class JoshsVisual extends Visual
         calculateAverageAmplitude();   
         surface.setResizable(true);  
         //call individual visual render functions from boolean above
+        bd.render();
         if(sphere)
         {
         sp.render();
