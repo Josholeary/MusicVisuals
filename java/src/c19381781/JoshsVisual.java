@@ -43,39 +43,46 @@ public class JoshsVisual extends Visual
 
     public void keyPressed()
     {
-        if (key == ' ')
+        if (key == 'q')
         {
-            getAudioPlayer().cue(0);
-            getAudioPlayer().play();
+            getAudioPlayer().play();    //play song
+        }
+        if (key == 'w')
+        {
+            getAudioPlayer().pause();   //pause song
+        }
+        if(key == 'e')
+        {
+            getAudioPlayer().cue(0);    //restard song
         }
         if(key == '0')
         {
-            bord = ! bord;
+            bord = ! bord;  //toggle border
         }
         if(key == '1')
         {
-            plan = ! plan;
+            plan = ! plan;  //planets on, other visuals off
             sphere = false;
             spin = false;
             bounce = false;
         }
         if (key == '2')
         {
-            sphere = ! sphere;
+            sphere = ! sphere;  //spheres on, other visuals off
             plan = false;
             spin = false;
             bounce = false;
         }
         if(key == '3')
         {
-            spin = ! spin;
+            spin = ! spin;  //spinner on, other visuals off
             plan = false;
             sphere = false;
             bounce = false;
         }
         if(key == '4')
         {
-            bounce = ! bounce;
+            bounce = ! bounce;  //bouncetube on, other visuals off
             plan = false;
             sphere = false;
             spin = false;
@@ -103,23 +110,23 @@ public class JoshsVisual extends Visual
         calculateAverageAmplitude();   
         surface.setResizable(true);  
         //call individual visual render functions from boolean above
-        if(bord)
+        if(bord)    //if boolean for border is true then call render function for it
         {
             bd.render();
         }
-        if(sphere)
+        if(sphere)  //if bool for sphere true then render
         {
             sp.render();
         }
-        if(plan)
+        if(plan)    //if bool for planet is true then render
         {
             pl.render();
         }        
-        if(spin)
+        if(spin)    //if bool for spin is true then render
         {
             sn.render();
         }
-        if(bounce)
+        if(bounce)  //if bool for bounce is true then render
         {
             bt.render();
         }
