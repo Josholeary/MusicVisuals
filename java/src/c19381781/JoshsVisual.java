@@ -8,6 +8,7 @@ public class JoshsVisual extends Visual
     boolean plan = false;
     boolean spin = false;
     boolean bounce = false;
+    boolean bord = false;
     ColourSpheres sp;
     Planets pl;
     Spinner sn;
@@ -46,6 +47,10 @@ public class JoshsVisual extends Visual
         {
             getAudioPlayer().cue(0);
             getAudioPlayer().play();
+        }
+        if(key == '0')
+        {
+            bord = ! bord;
         }
         if(key == '1')
         {
@@ -98,10 +103,13 @@ public class JoshsVisual extends Visual
         calculateAverageAmplitude();   
         surface.setResizable(true);  
         //call individual visual render functions from boolean above
-        bd.render();
+        if(bord)
+        {
+            bd.render();
+        }
         if(sphere)
         {
-        sp.render();
+            sp.render();
         }
         if(plan)
         {
