@@ -18,7 +18,7 @@ public class ColourSpheres
     {
         jv.strokeWeight(1);
         jv.pushMatrix();//push and pop matrix before every individual shape
-        jv.translate(1000, 750, -400);  //location, each shape will have it's individual coordinates
+        jv.translate(1000, 650, -400);  //location, each shape will have it's individual coordinates
         jv.rotateY(angle);  //y rotation
         jv.rotateX(angle);  //x rotation
         jv.noFill();    //no fill/hollow sphere and box
@@ -28,7 +28,7 @@ public class ColourSpheres
         jv.popMatrix();
     
         jv.pushMatrix();
-        jv.translate(500, 250, -400);   //location
+        jv.translate(500, 150, -400);   //location
         jv.rotateY(angle);  //y rotation
         jv.rotateX(angle);  //x rotation
         jv.noFill();    //hollow shapes
@@ -38,7 +38,7 @@ public class ColourSpheres
         jv.popMatrix();
 
         jv.pushMatrix();
-        jv.translate(1000, 250, -400); //location
+        jv.translate(1000, 150, -400); //location
         jv.rotateY(angle);  //y rotation
         jv.rotateX(angle);  //x rotation
         jv.noFill();    //hollow shapes
@@ -48,7 +48,7 @@ public class ColourSpheres
         jv.popMatrix();
 
         jv.pushMatrix();
-        jv.translate(500, 750, -400);   //location
+        jv.translate(500, 650, -400);   //location
         jv.rotateY(angle);  //y rotation
         jv.rotateX(angle);  //x rotation
         jv.noFill();   //hollow shape
