@@ -9,21 +9,17 @@ public class JoshsVisual extends Visual
     boolean spin = false;
     boolean bounce = false;
     boolean bord = false;
+    boolean menu = true;
     ColourSpheres sp;
     Planets pl;
     Spinner sn;
     BounceTube bt;
     Border bd;
+    Menu me;
 
     public void settings()
     {
         size(2560, 1600, P3D); //unfortunately fullscreen did not work on mac so I simply made the window the size of my screen
-        
-        // Use this to make fullscreen
-        //fullScreen();
-
-        // Use this to make fullscreen and use P3D for 3D graphics
-        //fullScreen(processing.core.PConstants.P3D, SPAN); 
     }
 
     public void setup()
@@ -39,6 +35,7 @@ public class JoshsVisual extends Visual
         sn = new Spinner(this);
         bt = new BounceTube(this);
         bd = new Border(this);
+        me = new Menu(this);
     }
 
     public void keyPressed()
@@ -65,6 +62,7 @@ public class JoshsVisual extends Visual
             sphere = false;
             spin = false;
             bounce = false;
+            menu = false;
         }
         if (key == '2')
         {
@@ -72,6 +70,7 @@ public class JoshsVisual extends Visual
             plan = false;
             spin = false;
             bounce = false;
+            menu = false;
         }
         if(key == '3')
         {
@@ -79,6 +78,7 @@ public class JoshsVisual extends Visual
             plan = false;
             sphere = false;
             bounce = false;
+            menu = false;
         }
         if(key == '4')
         {
@@ -86,6 +86,16 @@ public class JoshsVisual extends Visual
             plan = false;
             sphere = false;
             spin = false;
+            menu = false;
+        }
+        if(key == '9')
+        {
+            menu = ! menu;
+            plan = false;
+            sphere = false;
+            spin = false;
+            bounce = false;
+
         }
     }
 
@@ -129,6 +139,10 @@ public class JoshsVisual extends Visual
         if(bounce)  //if bool for bounce is true then render
         {
             bt.render();
+        }
+        if(menu)
+        {
+            me.render();
         }
     }
 }
