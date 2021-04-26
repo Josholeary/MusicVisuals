@@ -4,22 +4,19 @@ Name: Josh O'Leary
 
 Student Number: C19381781
 
-## Instructions
-- Fork this repository and use it a starter project for your assignment
-- Create a new package named your student number and put all your code in this package.
-- You should start by creating a subclass of ie.tudublin.Visual
-- There is an example visualiser called MyVisual in the example package
-- Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
+## Intro
+- Yo wassup
+- I'm pretty cool
 
 # Description of the assignment
-
+yeah nah yeah will do soon
 
 # Instructions
-
+Press buttons and enjoy
 # How it works
-
+music and code idk
 # What I am most proud of in the assignment
-
+it looks tasty
 # Markdown Tutorial
 
 This is *emphasis*
