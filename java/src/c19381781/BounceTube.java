@@ -12,8 +12,8 @@ public class BounceTube
     public void render()
     {
         float r = 1f;                
-        float lastX = jv.width / 2;
-        float lastY = jv.height / 2;
+        float prevX = jv.width / 2;
+        float prevY = jv.height / 2;
         jv.noFill();
         jv.strokeWeight(2);
         for(int i = 0 ; i < 325 ; i ++)
@@ -24,9 +24,9 @@ public class BounceTube
             float x = jv.width / 2 + jv.sin(theta) * r;
             float y = jv.height / 2 - jv.cos(theta) * r;
             r += jv.getSmoothedAmplitude();
-            jv.ellipse(x, y, lastX, lastY);
-            lastX = x;
-            lastY = y;
+            jv.ellipse(x, y, prevX, prevY);
+            prevX = x;
+            prevY = y;
         }
     }  
 } 

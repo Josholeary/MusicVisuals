@@ -9,16 +9,16 @@ public class Spinner
         this.jv = jv;
     }
 
-    float angle = 0;
 
     public void render()
-    {
+    {   
         float r = 1f;
         int NoVert = 5;      //Number of vertex on spinner     
         float prevX = jv.width / 2; 
         float prevY = jv.height / 2;
         float split = jv.TWO_PI / (float) NoVert;
-        for(int i = 0 ; i < 500 ; i ++)
+        jv.strokeWeight(1);
+        for(int i = 0 ; i < 1000 ; i += 3)
         {
             jv.stroke(jv.map(jv.getSmoothedAmplitude()*3, 0, 1, 0, 255), 255, 255);
             float theta = i * (split + jv.getSmoothedAmplitude());
@@ -29,6 +29,16 @@ public class Spinner
             prevX = x;
             prevY = y;
         }
+        jv.noFill();
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*2, 0, 1, 0, 255), 255, 255);
+        jv.circle(jv.width/2, jv.height/2, 400+jv.getSmoothedAmplitude()*250);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
+        jv.circle(jv.width/2, jv.height/2, 400+jv.getSmoothedAmplitude()*500);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()/2, 0, 1, 0, 255), 255, 255);
+        jv.circle(jv.width/2, jv.height/2, 400+jv.getSmoothedAmplitude()*750);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*6, 0, 1, 0, 255), 255, 255);
+        jv.circle(jv.width/2, jv.height/2, 400+jv.getSmoothedAmplitude()*1000);
+
     } 
 }
 
