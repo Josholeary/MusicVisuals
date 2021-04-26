@@ -27,7 +27,7 @@ public class JoshsVisual extends Visual
         startMinim();
                 
         // Call loadAudio to load an audio file to process 
-        loadAudio("poison.mp3");   
+        loadAudio("trnd.mp3");   
         colorMode(HSB);
 
         sp = new ColourSpheres(this);
