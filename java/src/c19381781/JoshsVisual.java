@@ -4,12 +4,14 @@ import ie.tudublin.*;
 
 public class JoshsVisual extends Visual
 { 
+    //booleans for menu
     boolean sphere = false;
     boolean plan = false;
     boolean spin = false;
     boolean bounce = false;
-    boolean bord = false;
-    boolean menu = true;
+    boolean bord = true;    //starts on by default
+    boolean menu = true;    //starts on by default
+    //classes
     ColourSpheres sp;
     Planets pl;
     Spinner sn;
@@ -30,6 +32,7 @@ public class JoshsVisual extends Visual
         loadAudio("trnd.mp3");   
         colorMode(HSB);
 
+        //class instances
         sp = new ColourSpheres(this);
         pl = new Planets(this);
         sn = new Spinner(this);
@@ -38,6 +41,7 @@ public class JoshsVisual extends Visual
         me = new Menu(this);
     }
 
+    //menu input settings
     public void keyPressed()
     {
         if (key == 'q')
@@ -90,7 +94,7 @@ public class JoshsVisual extends Visual
         }
         if(key == '9')
         {
-            menu = ! menu;
+            menu = ! menu;  //menu on, starts on by default, other visuals off
             plan = false;
             sphere = false;
             spin = false;
@@ -140,7 +144,7 @@ public class JoshsVisual extends Visual
         {
             bt.render();
         }
-        if(menu)
+        if(menu)    //if bool for menu is true then render
         {
             me.render();
         }
