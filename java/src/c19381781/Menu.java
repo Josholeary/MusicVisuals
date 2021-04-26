@@ -23,41 +23,41 @@ public class Menu
 
         //music controls
         jv.fill(150, 255, 255);
-        jv.text("Music controls:", 625, 200);
+        jv.text("Music Controls:", 615, 200);
 
         jv.textSize(24);
         jv.fill(70, 255, 255);
-        jv.text("Q - Play", 675, 250);
+        jv.text("Q - Play", 660, 250);
 
         jv.fill(0, 255, 255);
-        jv.text("W - Pause", 675, 300);
+        jv.text("W - Pause", 660, 300);
 
         jv.fill(40, 255, 255);
-        jv.text("E - Restart", 675, 350);
+        jv.text("E - Restart", 660, 350);
 
-        //visual options
+        //visual controls
         jv.textSize(32);
         jv.fill(150, 255, 255);
-        jv.text("Visuals:", 675, 450);
+        jv.text("Visual Controls:", 615, 450);
 
         jv.textSize(24);
         jv.fill(210, 255, 255);
-        jv.text("1 - Planets", 650, 500);
+        jv.text("1 - Planets", 660, 500);
 
         jv.fill(210, 255, 255);
-        jv.text("2 - Disco Spheres", 650, 550);
+        jv.text("2 - Disco Spheres", 660, 550);
 
         jv.fill(210, 255, 255);
-        jv.text("3 - Spinner", 650, 600);
+        jv.text("3 - Spinner", 660, 600);
 
         jv.fill(210, 255, 255);
-        jv.text("4 - Bouncy tube", 650, 650);
+        jv.text("4 - Bouncy Tube", 660, 650);
 
         jv.fill(210, 255, 255);
-        jv.text("0 - Toggle Border", 650, 700);
+        jv.text("0 - Toggle Border", 660, 700);
 
         jv.fill(210, 255, 255);
-        jv.text("9 - Return to menu", 650, 750);
+        jv.text("9 - Return to menu", 660, 750);
 
 
 
