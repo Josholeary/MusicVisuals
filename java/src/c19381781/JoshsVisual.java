@@ -82,7 +82,6 @@ public class JoshsVisual extends Visual
     public void draw()
     {
         background(0);
-        text("Amplitude:" + getAmplitude(), 50, 50);
         try
         {
             // Call this if you want to use FFT data

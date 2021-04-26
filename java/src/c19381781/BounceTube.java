@@ -19,14 +19,14 @@ public class BounceTube
         float lastY = jv.height / 2;
         jv.noFill();
         jv.strokeWeight(2);
-        for(int i = 0 ; i < 350 ; i ++)
+        for(int i = 0 ; i < 325 ; i ++)
         {
             float p = jv.map(i, 0, 300, 0, 255);    //rainbow effect scaling up tube
             jv.stroke(p, 255, 255, 100);
             float theta = i * jv.TWO_PI;
             float x = jv.width / 2 + jv.sin(theta) * r;
             float y = jv.height / 2 - jv.cos(theta) * r;
-            r += 0.35f + jv.getAmplitude();
+            r += jv.getSmoothedAmplitude();
             jv.ellipse(x, y, lastX, lastY);
             lastX = x;
             lastY = y;
