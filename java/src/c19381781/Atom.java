@@ -10,12 +10,27 @@ public class Atom
     }
 
     float angle = 0;
+    float x;
+    float y;
 
     public void render()
     {   
+        //4 electrons that move around from corners based on smooth amp *1.5k
+        x = jv.getSmoothedAmplitude()*1500;
+        y = jv.getSmoothedAmplitude()*1500;
+        jv.noStroke();
+        jv.fill(0, 255, 255);
+        jv.circle(x, y, 20);
+        jv.fill(140, 255, 255);
+        jv.circle(1435-x, 850-y, 20);
+        jv.fill(100, 255, 255);
+        jv.circle(1435-x, y, 20);
+        jv.fill(210, 255, 255);
+        jv.circle(x, 850-y, 20);
         jv.strokeWeight(1);
         jv.translate(jv.width/2, jv.height/2);
         jv.noFill();
+
         //atom nucleus
         jv.pushMatrix();
         jv.stroke(jv.map(jv.getSmoothedAmplitude()*5, 0, 1, 0, 255), 255, 255);
