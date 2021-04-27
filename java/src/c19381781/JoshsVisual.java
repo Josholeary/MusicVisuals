@@ -9,6 +9,7 @@ public class JoshsVisual extends Visual
     boolean plan = false;
     boolean spin = false;
     boolean bounce = false;
+    boolean ato = false;
     boolean bord = true;    //starts on by default
     boolean menu = true;    //starts on by default
     //classes
@@ -18,6 +19,7 @@ public class JoshsVisual extends Visual
     BounceTube bt;
     Border bd;
     Menu me;
+    Atom at;
 
     public void settings()
     {
@@ -39,6 +41,7 @@ public class JoshsVisual extends Visual
         bt = new BounceTube(this);
         bd = new Border(this);
         me = new Menu(this);
+        at = new Atom(this);
     }
 
     //menu input settings
@@ -67,6 +70,7 @@ public class JoshsVisual extends Visual
             spin = false;
             bounce = false;
             menu = false;
+            ato = false;
         }
         if (key == '2')
         {
@@ -75,6 +79,7 @@ public class JoshsVisual extends Visual
             spin = false;
             bounce = false;
             menu = false;
+            ato = false;
         }
         if(key == '3')
         {
@@ -83,10 +88,21 @@ public class JoshsVisual extends Visual
             sphere = false;
             bounce = false;
             menu = false;
+            ato = false;
         }
         if(key == '4')
         {
             bounce = ! bounce;  //bouncetube on, other visuals off
+            plan = false;
+            sphere = false;
+            spin = false;
+            menu = false;
+            ato = false;
+        }
+        if(key == '5')
+        {
+            ato = ! ato;    //atom on, other visuals off
+            bounce = false;
             plan = false;
             sphere = false;
             spin = false;
@@ -99,11 +115,11 @@ public class JoshsVisual extends Visual
             sphere = false;
             spin = false;
             bounce = false;
+            ato = false;
 
         }
     }
 
-    float rot = 0;
 
     public void draw()
     {
@@ -147,6 +163,10 @@ public class JoshsVisual extends Visual
         if(menu)    //if bool for menu is true then render
         {
             me.render();
+        }
+        if(ato)     //if bool for atom is true then render
+        {
+            at.render();
         }
     }
 }
