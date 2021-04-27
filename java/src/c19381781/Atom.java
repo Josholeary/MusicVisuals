@@ -33,7 +33,7 @@ public class Atom
 
         //atom nucleus
         jv.pushMatrix();
-        jv.stroke(jv.map(jv.getSmoothedAmplitude()*5, 0, 1, 0, 255), 255, 255);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()/2, 0, 1, 0, 255), 255, 255);
         jv.rotateY(angle);
         jv.rotateX(angle);
         jv.sphere(50+jv.getSmoothedAmplitude()*100);
@@ -42,7 +42,7 @@ public class Atom
         jv.strokeWeight(5);
         //atom 1st orbital
         jv.pushMatrix();
-        jv.stroke(jv.map(jv.getSmoothedAmplitude()*6, 0, 1, 0, 255), 255, 255);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
         jv.rotateY(angle);
         jv.circle(0, 0, 250+jv.getSmoothedAmplitude()*150);
         jv.popMatrix();
