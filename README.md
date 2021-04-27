@@ -18,11 +18,11 @@ My assignment is a music visualizer that uses several different audio reactive v
 # Instructions
 |*Input*|*Result*|
 |-------|--------|
-|Music Controls|------|
+| Music Controls | |
 | Q | Play |
 | W | Pause |
 | E | Restart |
-|Visual controls|------|
+| Visual controls | |
 | 1 | Planets |
 | 2 | Disco Spheres |
 | 3 | Spinner |
