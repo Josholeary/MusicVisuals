@@ -108,7 +108,7 @@ public class JoshsVisual extends Visual
             spin = false;
             menu = false;
         }
-        if(key == '9')
+        if(key == '6')
         {
             menu = ! menu;  //menu on, starts on by default, other visuals off
             plan = false;
