@@ -61,6 +61,28 @@ public class BounceTube
             elw3 = x3;
             elh3 = y3;
         }
+
+        //adding box that grows with smoohted amplitude on left side
+        jv.pushMatrix();
+        jv.strokeWeight(1);
+        jv.noFill();
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*3, 0, 1, 0, 255), 255, 255);
+        jv.translate(225, jv.height/2);
+        jv.box(50, 20+ jv.getSmoothedAmplitude()*1000, 50);
+        jv.fill(jv.map(jv.getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
+        jv.box(25, 20+ jv.getSmoothedAmplitude()*500, 25);
+        jv.popMatrix();
+
+        //adding box that grows with smoothed amplitude on right side
+        jv.pushMatrix();
+        jv.strokeWeight(1);
+        jv.noFill();
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*3, 0, 1, 0, 255), 255, 255);
+        jv.translate(1225, jv.height/2);
+        jv.box(50, 20+ jv.getSmoothedAmplitude()*1000, 50);
+        jv.fill(jv.map(jv.getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
+        jv.box(25, 20+ jv.getSmoothedAmplitude()*500, 25);
+        jv.popMatrix();
     }  
 } 
 
