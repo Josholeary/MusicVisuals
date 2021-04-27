@@ -5,8 +5,12 @@ Name: Josh O'Leary
 Student Number: C19381781
 
 ## Intro
-- Yo wassup
-- I'm pretty cool
+Welcome to the markdown for my OOP assignment, "Something beautiful to enjoy while listening to music.".
+I will be write on the following headings: 
+-	Description of the assignment
+-	Instructions on how to use the program
+-	How it works
+-	What I am most proud of in the assignment
 
 # Description of the assignment
 yeah nah yeah will do soon
