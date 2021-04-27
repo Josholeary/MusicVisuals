@@ -54,10 +54,13 @@ public class Menu
         jv.text("4 - Rainbow speaker", 660, 650);
 
         jv.fill(210, 255, 255);
-        jv.text("0 - Toggle Border", 660, 700);
+        jv.text("5 - Atom", 660, 700);
 
         jv.fill(210, 255, 255);
-        jv.text("9 - Return to menu", 660, 750);
+        jv.text("0 - Toggle Border", 660, 750);
+
+        jv.fill(210, 255, 255);
+        jv.text("9 - Return to menu", 660, 800);
 
 
 

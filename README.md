@@ -27,6 +27,7 @@ My assignment is a music visualizer that uses several different audio reactive v
 | 2 | Disco Spheres |
 | 3 | Spinner |
 | 4 | Rainbow speaker |
+| 5 | Atom |
 | 9 | Menu |
 | 0 | Toggle border effect |
 
