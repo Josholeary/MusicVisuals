@@ -51,7 +51,7 @@ public class Menu
         jv.text("3 - Spinner", 660, 600);
 
         jv.fill(210, 255, 255);
-        jv.text("4 - Bouncy Tube", 660, 650);
+        jv.text("4 - Rainbow speaker", 660, 650);
 
         jv.fill(210, 255, 255);
         jv.text("0 - Toggle Border", 660, 700);

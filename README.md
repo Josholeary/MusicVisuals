@@ -6,19 +6,30 @@ Student Number: C19381781
 
 ## Intro
 Welcome to the markdown for my OOP assignment, "Something beautiful to enjoy while listening to music.".
-I will be write on the following headings: 
+I will be writing on the following topics: 
 -	Description of the assignment
 -	Instructions on how to use the program
 -	How it works
 -	What I am most proud of in the assignment
 
 # Description of the assignment
-yeah nah yeah will do soon
+My assignment is a music visualizer that uses several different audio reactive visuals that respond to the amplitude of a song, these allow someone to sit back and really connect with the music as they watch the different visuals artistically portray the song they are listening to. It allows for the user to fully control what visuals they want to watch and to pause, play and restart the song at any point.
 
 # Instructions
-Press buttons and enjoy
+*Music controls*
+- Q - Play
+- W - Pause
+- E - Restart
+*Visual controls*
+- 1 - Planets
+- 2 - Disco Spheres
+- 3 - Spinner
+- 4 - Rainbow speaker
+- 9 - Menu
+- 0 - Toggle border effect
+
 # How it works
-music and code idk
+
 # What I am most proud of in the assignment
 it looks tasty
 # Markdown Tutorial
