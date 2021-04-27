@@ -1,8 +1,8 @@
 # Music Visualiser Project
 
-Name: Josh O'Leary
+*Name: Josh O'Leary*
 
-Student Number: C19381781
+*Student Number: C19381781*
 
 ## Intro
 Welcome to the markdown for my OOP assignment, "Something beautiful to enjoy while listening to music.".
@@ -22,7 +22,7 @@ My assignment is a music visualizer that uses several different audio reactive v
 | Q | Play |
 | W | Pause |
 | E | Restart |
-| Visual controls | |
+| Visual Controls | |
 | 1 | Planets |
 | 2 | Disco Spheres |
 | 3 | Spinner |
@@ -31,9 +31,11 @@ My assignment is a music visualizer that uses several different audio reactive v
 | 0 | Toggle border effect |
 
 # How it works
+The program consists of
 
 # What I am most proud of in the assignment
 it looks tasty
+
 # Markdown Tutorial
 
 This is *emphasis*
