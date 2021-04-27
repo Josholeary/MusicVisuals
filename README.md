@@ -16,19 +16,19 @@ I will be writing on the following topics:
 My assignment is a music visualizer that uses several different audio reactive visuals that respond to the amplitude of a song, these allow someone to sit back and really connect with the music as they watch the different visuals artistically portray the song they are listening to. It allows for the user to fully control what visuals they want to watch and to pause, play and restart the song at any point.
 
 # Instructions
-*Music controls*
-- Q - Play
-- W - Pause
-- E - Restart
-
-*Visual controls*
-
-- 1 - Planets
-- 2 - Disco Spheres
-- 3 - Spinner
-- 4 - Rainbow speaker
-- 9 - Menu
-- 0 - Toggle border effect
+|*Input*|*Result*|
+|-------|--------|
+|Music Controls|------|
+| Q | Play |
+| W | Pause |
+| E | Restart |
+|Visual controls|------|
+| 1 | Planets |
+| 2 | Disco Spheres |
+| 3 | Spinner |
+| 4 | Rainbow speaker |
+| 9 | Menu |
+| 0 | Toggle border effect |
 
 # How it works
 
