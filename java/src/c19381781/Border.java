@@ -9,7 +9,8 @@ public class Border
         this.jv = jv;
     }
 
-    
+    //unfortunately the border will only fit according to the particular window which is the size of my mac sreen without the bottom app dock present
+    //this means it may appear strangely on other devices but i could not use another alternative since fullscreen() was not supported on mac
     public void render()
     {   
         float gap = jv.width / (float) jv.getBands().length;    //gap between bars
