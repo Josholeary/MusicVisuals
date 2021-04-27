@@ -39,6 +39,64 @@ public class Spinner
         jv.stroke(jv.map(jv.getSmoothedAmplitude()*6, 0, 1, 0, 255), 255, 255); //circle line colour, 6 * smoothed amp
         jv.circle(jv.width/2, jv.height/2, 400+jv.getSmoothedAmplitude()*1000); //circle is central, base size 400, grows by smooth amp * 750
 
+        //adding accessory circles
+        jv.pushMatrix();
+        jv.translate(225, 150);
+        jv.stroke(0,255,255);
+        jv.fill(50);
+        jv.circle(0, 0, 150);
+        jv.noFill();
+        jv.stroke(jv.map(jv.getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*275);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*2, 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*225);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*4, 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*175);
+        jv.popMatrix();
+
+        jv.pushMatrix();
+        jv.translate(1225, 150);
+        jv.stroke(140,255,255);
+        jv.fill(50);
+        jv.circle(0, 0, 150);
+        jv.noFill();
+        jv.stroke(jv.map(jv.getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*275);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*2, 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*225);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*4, 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*175);
+        jv.popMatrix();
+
+        jv.pushMatrix();
+        jv.translate(225, 700);
+        jv.stroke(100,255,255);
+        jv.fill(50);
+        jv.circle(0, 0, 150);
+        jv.noFill();
+        jv.stroke(jv.map(jv.getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*275);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*2, 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*225);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*4, 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*175);
+        jv.popMatrix();
+
+        jv.pushMatrix();
+        jv.translate(1225, 700);
+        jv.stroke(210,255,255);
+        jv.fill(50);
+        jv.circle(0, 0, 150);
+        jv.noFill();
+        jv.stroke(jv.map(jv.getSmoothedAmplitude(), 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*275);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*2, 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*225);
+        jv.stroke(jv.map(jv.getSmoothedAmplitude()*4, 0, 1, 0, 255), 255, 255);
+        jv.circle(0, 0, 1+jv.getSmoothedAmplitude()*175);
+        jv.popMatrix();
+
+
     } 
 }
 
