@@ -12,6 +12,7 @@ public class JoshsVisual extends Visual
     boolean ato = false;
     boolean bord = true;    //starts on by default
     boolean menu = true;    //starts on by default
+    boolean shape = false;
     //classes
     ColourSpheres sp;
     Planets pl;
@@ -20,6 +21,7 @@ public class JoshsVisual extends Visual
     Border bd;
     Menu me;
     Atom at;
+    ShapeStorm ss;
 
     public void settings()
     {
@@ -42,6 +44,7 @@ public class JoshsVisual extends Visual
         bd = new Border(this);
         me = new Menu(this);
         at = new Atom(this);
+        ss = new ShapeStorm(this);
     }
 
     //menu input settings
@@ -118,6 +121,10 @@ public class JoshsVisual extends Visual
             ato = false;
 
         }
+        if(key == '-')
+        {
+            shape = ! shape;    //toggle shapestorm effect
+        }
     }
 
 
@@ -167,6 +174,10 @@ public class JoshsVisual extends Visual
         if(ato)     //if bool for atom is true then render
         {
             at.render();
+        }
+        if(shape)
+        {
+            ss.render();    //if bool for shapestorm is true then render
         }
     }
 }
