@@ -77,7 +77,7 @@ if(key == '3')
 
 ## Planets
 
-![An image](images/Planets.png)
+![An image](images/Planet.png)
 
 ## Disco Spheres
 
