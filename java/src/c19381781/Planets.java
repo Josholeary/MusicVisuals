@@ -31,7 +31,7 @@ public class Planets
         jv.fill( 5+jv.getSmoothedAmplitude()*38, 255, 255);    //sun is a yellow/orange colour and changes depending on smooth amplitude
         jv.lights();
         jv.stroke(25, 255, 255);    //added stroke to some of the planets as a detail feature for aesthetics
-        jv.sphere(150+jv.getSmoothedAmplitude()*200);   //size of each planet will grow depending on smoothed amplitude but sun will grow most as it is a gaseous star
+        jv.sphere(175+jv.getSmoothedAmplitude()*200);   //size of each planet will grow depending on smoothed amplitude but sun will grow most as it is a gaseous star
 
         //mercury, rotates around the sun
         jv.translate(300, 0, -300);
@@ -71,7 +71,7 @@ public class Planets
         jv.fill( 34, 255, 255);
         jv.lights();
         jv.stroke(32, 110, 110); //added stroke to jupiter to give appearance of it's cloudy surface
-        jv.sphere(150+jv.getSmoothedAmplitude()*150);
+        jv.sphere(200+jv.getSmoothedAmplitude()*150); //made jupiter larger because it appeared very small thanks to its z cooridinates 
         jv.popMatrix();
 
         angle += jv.getSmoothedAmplitude()/25; //planets orbits at smoothedamplitude divided by 25 to give a noticeable but not too fast orbital patern
