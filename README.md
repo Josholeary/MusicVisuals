@@ -69,6 +69,31 @@ if(key == '3')
         }
 ```
 
+# Visuals
+
+## Main Menu
+
+![An image](images/MainMenu.png)
+
+## Planets
+
+![An image](images/Planets.png)
+
+## Disco Spheres
+
+![An image](images/Disco.png)
+
+## Spinner
+
+![An image](images/Spin.png)
+
+## Rainbow Speaker
+
+![An image](images/RainbowSpeaker.png)
+
+## Atom
+
+![An image](images/Atom.png)
 
 
 
