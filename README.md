@@ -32,7 +32,45 @@ My assignment is a music visualizer that uses several different audio reactive v
 | 0 | Toggle border effect |
 
 # How it works
-The program consists of
+The program uses a combination of object oriented programming and the minim and processing java libraries to create the visuals. The program reads in the song from the data folder in the main control file known as "JoshsVisuals.java", this file sets our window size, makes an object of each visual file and reads in the users input and calls the render function to draw the other visuals. Each visual including the main menu has it's own file which has a render() function. Each of these has a boolean variable which is toggled by key presses in the control method "JoshsVisual.java" and has a condition that two of the visuals cannot be on at the same time as they are quite intricate and will simply make a mess. This file creates an instance of each and then the render function is tied behind an if statement like as follows:
+
+```Java
+//Example of boolean menu and render calling from other files uses control file "JoshsVisuals.java" using spinner visual
+boolean spin = false;
+Spinner sn;
+
+
+ public void setup()
+    {
+        startMinim();
+                
+        // Call loadAudio to load an audio file to process 
+        loadAudio("trnd.mp3");   
+        colorMode(HSB);
+
+        //class instances
+        sn = new Spinner(this);
+    }
+
+if(key == '3')
+        {
+            spin = ! spin;  //spinner on, other visuals off
+            plan = false;
+            sphere = false;
+            bounce = false;
+            menu = false;
+            ato = false;
+        }
+		
+
+		if(spin)    //if bool for spin is true then render
+        {
+            sn.render();
+        }
+```
+
+
+
 
 # What I am most proud of in the assignment
 it looks tasty
