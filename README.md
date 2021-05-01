@@ -17,7 +17,7 @@ My assignment is a music visualizer that uses several different audio reactive v
 
 # Youtube video
 
-[![YouTube](https://i9.ytimg.com/vi_webp/XZrCVTYcXBg/mqdefault.webp?time=1619796300000&sqp=CMzCsIQG&rs=AOn4CLBc__zzRa4n7KhA6Ci_-CMvpCP_xw)](https://www.youtube.com/watch?v=XZrCVTYcXBg)
+[![YouTube](https://i9.ytimg.com/vi_webp/XZrCVTYcXBg/mqdefault.webp?time=1619868600000&sqp=CLj3tIQG&rs=AOn4CLB2RKIPRgC5e_7SjMni_7h0R1lKQQ)](https://www.youtube.com/watch?v=XZrCVTYcXBg)
 
 # Instructions
 |*Input*|*Result*|
